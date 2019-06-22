@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Orange Company Apps</string>
+    <string-array name="navigation_drawer_items_array">
+        <item>Sobre nós</item>
+        <item>Fale conosco</item>
+        <item>Missão, visão e valores</item>
+        <item>Serviços</item>
+        <item>Formas de pagamento</item>
+    </string-array>
+    <string name="drawer_aberto">Drawer aberto</string>
+    <string name="drawer_fechado">Drawer fechado</string>
+    <string name="sobre_nos">Sobre nós</string>
+    <string name="texto_sobre_nos">Inovação. Tecnologia. Empreendedorismo.
+
+São esses os 3 pilares em que nós - a Orange Company Apps - nos baseamos.
+Uma startup criada no ano de 2019 por jovens inovadores que sonham em transformar o mundo com pequeno e grandes atos. Estamos localizados no bairro da zona sul de São paulo.
+ Somos a realização do sonho de uma juventude em transformar e fazer acontecer, levando aos pequenos e grandes negócios (de ONGS a empresas)  o melhor em soluções tecnológicas, através de aplicativos para conectar você ao seu público alvo, tudo isso com o preço que você busca e a qualidade que você precisa.
+
+Porque com a Orange Company Apps é assim:
+
+Inovamos - porque acreditamos que a criatividade move o mundo (e porque você merece coisas novas);
+
+Usamos tecnologia de ponta - porque buscamos  ser disruptivos;
+
+Empreendemos - porque sonhar não é nada sem atitude.
+
+
+Orange Company Apps: o sucesso a um app de distância!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nome">Nome</string>
+    <string name="fale_conosco">Fale conosco</string>
+    <string name="e_mail">E-mail</string>
+    <string name="mensagem">Mensagem</string>
+    <string name="assunto">Assunto</string>
+    <string name="a_orange_company_apps">A Orange Company Apps não se limita a construir um aplicativo. Oferecemos serviços de consultoria
+        especializada para ajudar você a entender a real necessidade de negócio e como a tecnologia
+    pode te auxiliar. Enfim, com base no que você precisa, construímos um app para conectar você ao seu público alvo, estreitando relações e aumentando a receita!</string>
+</resources>

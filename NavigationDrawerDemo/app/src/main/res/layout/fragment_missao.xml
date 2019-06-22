@@ -1,0 +1,73 @@
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Missão"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:textSize="22dp"
+            android:textColor="#FF9800"
+            android:id="@+id/ttlMissao"
+            android:layout_marginBottom="15dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@id/ttlMissao"
+            android:id="@+id/txtMissao"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:text="Desenvolver aplicativos voltados para que as empresas tenham mais flexibilidade e facilitem a comunicação com seus clientes."
+            android:layout_marginBottom="30dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visão"
+            android:layout_below="@id/txtMissao"
+            android:textSize="22dp"
+            android:textColor="#FF9800"
+            android:id="@+id/ttlVisao"
+            android:layout_marginBottom="15dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@id/ttlVisao"
+            android:id="@+id/txtVisao"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:text="Com a inovação em nossos serviços nos tornaremos a maior empresa desenvolvedora de apps do Brasil."
+            android:layout_marginBottom="30dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valores"
+            android:layout_below="@id/txtVisao"
+            android:textSize="22dp"
+            android:textColor="#FF9800"
+            android:id="@+id/ttlValores"
+            android:layout_marginBottom="15dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_below="@id/ttlValores"
+            android:id="@+id/txtValores"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:text="Colaboração, Criatividade, Comunicação e Produtividade."
+            android:layout_marginBottom="30dp"/>
+
+    </RelativeLayout>
+</ScrollView>
