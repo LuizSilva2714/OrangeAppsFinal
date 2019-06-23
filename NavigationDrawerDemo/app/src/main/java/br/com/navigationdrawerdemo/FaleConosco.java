@@ -21,6 +21,12 @@ public class FaleConosco extends Fragment {
     EditText edtAssunto;
     EditText edtMensagem;
     Button btn;
+    View view;
+
+    public static View getCurrentView(){
+        return view;
+    }
+
     public FaleConosco(){
 
     }
@@ -35,41 +41,11 @@ public class FaleConosco extends Fragment {
         edtMensagem = v.findViewById(R.id.edtMensagem);
         edtNome = v.findViewById(R.id.edtNome);
         btn = v.findViewById(R.id.btnSend);
+        view = v;
 
         return v;
     }
 
-    public void sendEmail(View view) {
-
-        final String nome = edtNome.getText().toString();
-        final String email = edtEmail.getText().toString();
-        final String assunto = edtAssunto.getText().toString();
-        final String mensagem = edtMensagem.getText().toString();
-
-        new Thread(new Runnable() {
-
-            @Override
-            public void run() {
-                try {
-                    GMailSender sender = new GMailSender("orangeapps2019@gmail.com",
-                            "orange2019");
-                    sender.sendMail(assunto, nome + " enviou uma nova mensagem!: \n \n" + mensagem,
-                            new String(email), "orangeapps2019@gmail.com");
-
-
-                } catch (Exception e) {
-                    Log.e("SendMail", e.getMessage(), e);
-                }
-            }
-
-        }).start();
-
-        Toast.makeText(getContext(), "Mensagem enviada com sucesso!", Toast.LENGTH_LONG).show();
-        edtAssunto.setText("");
-        edtEmail.setText("");
-        edtMensagem.setText("");
-        edtNome.setText("");
-    }
 
 
 

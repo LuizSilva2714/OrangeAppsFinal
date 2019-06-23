@@ -25,6 +25,45 @@ public class MainActivity extends AppCompatActivity {
     private CharSequence mTitle;
     android.support.v7.app.ActionBarDrawerToggle mDrawerToggle;
 
+    public void sendEmail(View view) {
+        View v = FaleConosco.getCurrentView();
+
+        EditText edtAssunto = v.findViewById(R.id.edtAssunto);
+        EditText edtEmail = v.findViewById(R.id.edtEmail);
+        EditText edtMensagem = v.findViewById(R.id.edtMensagem);
+        EditText edtNome = v.findViewById(R.id.edtNome);
+
+        final String nome = edtNome.getText().toString();
+        final String email = edtEmail.getText().toString();
+        final String assunto = edtAssunto.getText().toString();
+        final String mensagem = edtMensagem.getText().toString();
+
+        new Thread(new Runnable() {
+
+            @Override
+            public void run() {
+                try {
+                    GMailSender sender = new GMailSender("orangeapps2019@gmail.com",
+                            "orange2019");
+                    sender.sendMail(assunto, nome + " enviou uma nova mensagem!: \n \n" + mensagem,
+                            new String(email), "orangeapps2019@gmail.com");
+
+
+                } catch (Exception e) {
+                    Log.e("SendMail", e.getMessage(), e);
+                }
+            }
+
+        }).start();
+
+        Toast.makeText(getContext(), "Mensagem enviada com sucesso!", Toast.LENGTH_LONG).show();
+        edtAssunto.setText("");
+        edtEmail.setText("");
+        edtMensagem.setText("");
+        edtNome.setText("");
+    }
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
